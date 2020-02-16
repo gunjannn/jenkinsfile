@@ -4,32 +4,31 @@ pipeline
            stages
            {
              stage("print hi")
-	              {
-	            steps {
-	                    sh "echo hi"
-	            }
+	         {
+	                steps {
+	                        sh "echo hi"
+	                      }
 				
 			 stage("clone")
 			  {
-			   steps  {
+			      steps  {
 			            sh "echo cloning"
 				}
               	
               stage("test")
                {
-                 steps {
+                    steps                 {
                         sh "echo testcases"	
-                  }
+                          }
 
                stage("build")
-               { 
-                 steps {
+                { 
+                  steps {
 			             sh"echo build"
-			      }
-			  }
-		     }
-	        }
-          }
-      }	
-    }
-  
+			            }
+			    }
+			   }
+	          }
+             }
+            }	
+	}	
